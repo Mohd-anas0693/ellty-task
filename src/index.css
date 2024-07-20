@@ -1,0 +1,16 @@
+/* Centering the form in the middle of the screen */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  height: 100vh;
+  margin: 0;
+  background-color: #f8f9fa;
+  font-family: Montserrat;
+  color: #1f2128;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.138rem;
+  text-align: left;
+}

@@ -1,0 +1,44 @@
+form {
+  margin-top: 5.313rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.25rem 2rem ;
+  width: 23.125rem;
+  height: 20.375rem;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0.625rem 0;
+  margin: 0.625rem 0; 
+  border-bottom: #cdcdcd 0.8px solid;
+  border-top: #cdcdcd 0.8px solid;
+}
+button {
+  background-color: #FFCE22;
+  border: none;
+  color: #1F2128;
+  padding: 0.5rem 0.938rem 0.5rem 1.375rem;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-family: Montserrat;
+  font-size: 1.125rem;
+  margin: 1.25rem  0;
+  cursor: pointer;
+  width: 100%;
+  height: 2.813rem;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #FFCE22;
+}
+
+
+
+
+

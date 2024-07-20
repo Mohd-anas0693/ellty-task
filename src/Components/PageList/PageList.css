@@ -1,0 +1,81 @@
+label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: -1px;
+  left: -1px;
+  padding: 0.5rem 0.938rem 0.5rem 1.375rem;
+  font-size: 16px;
+}
+
+input[type="checkbox"] {
+  width: 1.438rem;
+  height: 1.438rem;
+  cursor: pointer;
+}
+
+/* Hide the default checkbox but keep the checkmark */
+.rounded-checkbox {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: white;
+  border: 1px solid #bdbdbd;
+  border-radius: 6px; /* Adjust the value for more or less rounding */
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Custom styles when the checkbox is checked */
+.rounded-checkbox:checked {
+  background-color: #007bff; /* Default checked background color */
+  border: 2px solid #007bff; /* Default checked border color */
+}
+
+.rounded-checkbox:checked::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0.375rem;
+  height: 0.75rem;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+/* Add hover effect */
+.rounded-checkbox:hover {
+  background-color: hsla(0, 0%, 100%, 0.878);
+  border-color: #a5a5a5; /* Border color on hover */
+}
+.rounded-checkbox:checked:hover {
+  background-color: #007bffce; /* Default checked background color */
+  border: 2px solid #007bffce;
+}
+.rounded-checkbox:checked:hover::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0.375rem;
+  height: 0.75rem;
+  border: solid white; /* Hover checkmark color */
+  border-width: 0 2px 2px 0;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.rounded-checkbox:hover::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0.375rem;
+  height: 0.75rem;
+  border: solid #acacac; /* Hover checkmark color */
+  border-width: 0 2px 2px 0;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
